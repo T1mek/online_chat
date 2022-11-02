@@ -1,0 +1,107 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.formContainer {
+   background-color: rgb(94, 94, 220);
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   .formWrapper {
+      width: 250px;
+      background-color: white;
+      padding: 20px 60px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+
+      .logo {
+         color: #5d5b8d;
+         font-size: 24px;
+         font-weight: 600;
+      }
+
+      .title {
+         color: #5d5b8d;
+         font-size: 12px;
+      }
+
+      form {
+         width: 250px;
+         display: flex;
+         flex-direction: column;
+         gap: 15px;
+         display: flex;
+
+         input {
+            padding: 15px;
+            border: none;
+            border-bottom: 1px solid #a7bcff;
+
+            &::placeholder {
+               color: rgb(175, 175, 175);
+            }
+         }
+
+         button {
+            color: white;
+            background-color: #a7bcff;
+            padding: 10px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+         }
+
+         label {
+            img {
+               width: 40px;
+
+            }
+
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            cursor: pointer;
+         }
+      }
+
+      p {
+         color: grey;
+         font-size: 12px;
+         margin-top: 20px;
+      }
+   }
+}
+
+.home {
+   height: 100vh;
+   background-color: rgb(94, 94, 220);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   .container {
+      border: 1px solid white;
+      border-radius: 10px;
+      width: 65%;
+      height: 80%;
+      display: flex;
+      overflow: hidden;
+
+      .sidebar {
+         flex: 1;
+         border-right: 1px solid darkolivegreen;
+         background-color: darkolivegreen;
+      }
+
+      .chat {
+         flex: 2;
+      }
+   }
+}
