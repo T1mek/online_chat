@@ -98,10 +98,185 @@
          flex: 1;
          border-right: 1px solid darkolivegreen;
          background-color: darkolivegreen;
+
+         .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #2f22d2;
+            height: 50px;
+            padding: 10px;
+            justify-content: space-between;
+            color: #ddddfd;
+         }
+
+         .logo {
+            font-weight: bold;
+         }
+
+         .user {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            img {
+               background-color: #ddddfd;
+               height: 24px;
+               width: 24px;
+               border-radius: 50%;
+               object-fit: cover;
+            }
+
+            button {
+               background-color: #2f22d2;
+               color: #ddddfd;
+               border: none;
+               cursor: pointer;
+               font-size: 10px;
+
+            }
+         }
+
+         .chats {
+            .userChat {
+               padding: 10px;
+               display: flex;
+               align-items: center;
+               gap: 10px;
+               color: white;
+               cursor: pointer;
+
+               &:hover {
+                  background-color: #2f2d52;
+               }
+
+               img {
+                  background-color: #ddddfd;
+                  height: 50px;
+                  width: 50px;
+                  border-radius: 50%;
+                  object-fit: cover;
+               }
+
+               .userChatInfo {
+                  span {
+                     font-size: 18px;
+                     font-weight: 500;
+                  }
+
+                  p {
+                     color: lightgray;
+                     font-size: 14px;
+                  }
+               }
+            }
+
+         }
+
+         .search {
+            border-bottom: 1px solid gray;
+
+            .searchForm {
+               input {
+                  background-color: transparent;
+                  color: white;
+                  border: none;
+                  outline: none;
+
+                  &::placeholder {
+                     color: rgb(198, 198, 198);
+                  }
+               }
+            }
+
+            .userChat {
+               padding: 10px;
+               display: flex;
+               align-items: center;
+               gap: 10px;
+               color: white;
+               cursor: pointer;
+
+               &:hover {
+                  background-color: #2f2d52;
+               }
+
+               img {
+                  background-color: #ddddfd;
+                  height: 50px;
+                  width: 50px;
+                  border-radius: 50%;
+                  object-fit: cover;
+               }
+
+
+            }
+         }
       }
+
 
       .chat {
          flex: 2;
+
+         .chatInfo {
+            height: 50px;
+            background-color: #5d5b8d;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            color: lightgray;
+         }
+
+         .chatIcons {
+            gap: 10px;
+            display: flex;
+
+            img {
+               height: 15px;
+               width: 15px;
+               background-color: lightgray;
+               cursor: pointer;
+            }
+         }
+
+         .messages {
+            background-color: #ddddfd;
+            padding: 10px;
+            height: calc(100% - 160px);
+         }
+
+         .input {
+            height: 50px;
+            background-color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            input {
+               border: none;
+               width: 100%;
+               outline: none;
+               font-size: 18px;
+
+               &::placeholder {
+                  color: lightgray  ;
+               }
+            }
+
+            .send {
+               display: flex;
+               align-content: center;
+               gap: 10px;
+
+               img {
+                  cursor: pointer;
+                  height: 25px;
+                  width: 25px;
+               }
+            }
+         }
+
       }
    }
 }
